@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studi Kasus</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; /* Mengatur tinggi minimum body sesuai tinggi layar */
+      }
+
+      header {
+        background-color: #3161c9;
+        color: #ebfa63;
+        text-align: left;
+        padding: 10px 0;
+        margin-bottom: 10px; /* Jarak antara header dengan kontainer berikutnya */
+      }
+      header h1 {
+        color: #ebfa63; /* Warna kuning */
+        margin-bottom: 1px; /* Mengatur jarak bawah teks "Halo CSS!" */
+      }
+
+      header h3 {
+        color: #fff; /* Warna putih */
+        margin-top: 1px; /* Mengatur jarak atas teks "Ini adalah website CSS saya" */
+      }
+      .container {
+        display: flex;
+        flex-direction: row; /* Tata letak horizontal */
+        flex: 1; /* Mengisi sisa ruang di dalam body */
+      }
+
+      .sidebar {
+        background-color: #f4f4f4;
+        border: 2px dashed #4341aa;
+        flex: 0.5; /* Mengurangi nilai flex dari 1 menjadi 0.5 */
+      }
+      .sidebar nav ul {
+        list-style-type: none;
+        padding: 10px;
+      }
+      .sidebar nav ul li {
+        margin-bottom: 10px;
+      }
+      .sidebar nav ul li a {
+        color: #333;
+        text-decoration: none;
+      }
+      .sidebar nav ul li:nth-child(5) a {
+        color: #616bf0; /* Warna default untuk link Menu 5 */
+        text-decoration: none; /* Menghilangkan underline pada link */
+      }
+      .sidebar nav ul li:nth-child(6) a:hover {
+        color: red; /* Warna saat hover untuk link Menu 6 */
+        text-decoration: underline; /* Menambahkan underline pada hover */
+      }
+      .content {
+        background-color: #f9f9f9;
+        padding: 5px;
+        text-align: center; /* Mengatur teks menjadi di pinggir kiri */
+        flex: 1.5; /* Menambahkan nilai flex dari 2 menjadi 1.5 */
+        margin-left: 5px;
+      }
+      .content h1 {
+        color: #000000; /* Warna kuning */
+        margin-bottom: 1px; /* Mengatur jarak bawah teks "Halo CSS!" */
+      }
+      .content h3 {
+        color: #292b1f; /* Warna kuning */
+        margin-top: 1px; /* Mengatur jarak atas teks "Ini adalah website CSS saya" */
+      }
+      .content p {
+        color: #dd0000; /* Warna kuning */
+        margin-bottom: 1px; /* Mengatur jarak bawah teks "Halo CSS!" */
+        margin-top: 1px; /* Mengatur jarak atas teks "Ini adalah website CSS saya" */
+      }
+      footer {
+        background-color: #83bfc7;
+        color: #000000;
+        text-align: right;
+        padding: 10px 0;
+        width: 100%;
+        margin-top: 10px; /* Jarak antara footer dengan kontainer sebelumnya */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Halo CSS !</h1>
+      <h3>Ini adalah website CSS saya</h3>
+    </header>
+    <div class="container">
+      <div class="sidebar">
+        <nav>
+          <ul>
+            <li><a href="margin.html">Menu 1</a></li>
+            <li><a href="border-style.html">Menu 2</a></li>
+            <li><a href="combinator.html">Menu 3</a></li>
+            <li><a href="simple.html">Menu 4</a></li>
+            <li><a href="padding.html">Menu 5</a></li>
+            <li><a href="hyperlink.html">Menu 6</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="content">
+        <img src="gambar/icon.png" width="15%" high="15%" />
+        <h1>TI</h1>
+        <h3>Politeknik negeri Madiun</h3>
+        <p>Mewujudkan pendidikan tinggi vokasi dalam bisang</p>
+        <p>Teknologi Informasi dan penerapannya yang berkualitas,</p>
+        <p>inofatif dan berdaya saing Nasional.</p>
+      </div>
+    </div>
+    <footer>
+      <p>Ringga Dwi K | 233307057 | TI-2B</p>
+    </footer>
+  </body>
+</html>
